@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1048819712804",
+    "firebase_url": "https://bubbletravel-ac939.firebaseio.com",
+    "project_id": "bubbletravel-ac939",
+    "storage_bucket": "bubbletravel-ac939.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048819712804:android:7a704664b2df8d78",
+        "android_client_info": {
+          "package_name": "com.example.bubbletravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048819712804-80u38if1s71gm521jd28chuo8nt5m13v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyFDXI0Lws71JAcSeo9YnBLqQWy-9M0Zw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048819712804-80u38if1s71gm521jd28chuo8nt5m13v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

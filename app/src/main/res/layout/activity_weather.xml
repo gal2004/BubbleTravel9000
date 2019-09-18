@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:background="@drawable/weather2"
+    tools:context=".WeatherActivity">
+
+    <RelativeLayout
+        android:id="@+id/temperatureContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/temperatureLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:ellipsize="end"
+            android:text="Temperature"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textColor="@color/colorGray"/>
+
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/weatherIconContainer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false">
+
+        <ImageView
+            android:id="@+id/weatherIcon"
+            android:layout_width="99dp"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/weatherIconContainer"
+            android:layout_alignTop="@+id/weatherIconContainer"
+            android:contentDescription="@string/weather_description"
+            android:src="@drawable/unknown" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weatherIconContainer"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="325dp"
+        android:maxLines="1"
+        android:text="@string/initial_weather_data"
+        android:textColor="@color/colorGray"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

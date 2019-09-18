@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backapp1"
+    tools:context=".InvitationActivity">
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="450dp"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:id="@+id/textViewDeparting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_marginVertical="12dp"
+        android:text="Departing"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textViewReturning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_marginVertical="12dp"
+        android:layout_marginHorizontal="120dp"
+        android:text="Returning"
+        android:textSize="25dp" />
+
+    <EditText
+        android:inputType="none"
+        android:focusable="false"
+        android:id="@+id/editTextDeparting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDeparting"
+        android:hint="dd/mm/yyyy" />
+
+    <EditText
+        android:id="@+id/editTextReturning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewReturning"
+        android:layout_marginHorizontal="120dp"
+        android:hint="dd/mm/yyyy" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextReturning"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="475dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonsty"
+        android:text="Search" />
+</RelativeLayout>

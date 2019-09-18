@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backapp2"
+    tools:context=".ProfileActivity">
+
+
+    <TextView
+        android:id="@+id/textViewUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/imageViewProfile"
+        android:layout_marginHorizontal="125dp"
+        android:text="Hello User" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:background="@drawable/buttonsty"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout" />
+
+    <Button
+        android:id="@+id/buttonInvitation"
+        android:background="@drawable/buttonsty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="400dp"
+        android:text="Make Invitation" />
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="150dp"/>
+
+
+</RelativeLayout>

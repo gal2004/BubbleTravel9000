@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whether"
+
+    tools:context=".FindCityWeatherActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forecast"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/colorGray"
+        android:textSize="55sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/edtCityName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:hint="@string/search_hint"
+        android:background="@drawable/edt_field_outline"
+        android:textColor="@color/colorBlack"
+        android:inputType="text"
+        android:maxLines="1"
+        android:gravity="center_horizontal|center_vertical" />
+
+    <Button
+        android:id="@+id/btnGetWeather"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/get_weather_text"
+        android:background="@drawable/button_outline"
+        android:layout_below="@+id/edtCityName"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
